@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Kaltura Video Downloader",
+  "version": "1.0",
+  "description": "Download Kaltura videos with one click",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_title": "Download Kaltura Video"
+  }
+}
